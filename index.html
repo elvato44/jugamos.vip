@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linea-Esmeralda</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="logo-wrapper">
+    <img class="logo" src="img/logo-nobg.png" alt="Logo">
+  </div>
+
+  <div class="card">
+    <div class="main-text">
+      <p class="typing">🔥ESCRIBI TU NOMBRE Y CREA TU USUARIO🔥</p>
+      <p><span class="dorado-neon">BONO DE BIENVENIDA</span></p>
+    </div>
+
+    <input type="text" id="nombreUsuario" placeholder="Tu nombre" class="nombre-input" />
+
+    <button class="popup-button" id="whatsappButton">
+      <span>¡CREA TU USUARIO!</span>
+      <img src="img/WhatsApp.svg-2.webp" alt="Whatsapp">
+    </button>
+  </div>
+
+  <div class="barra-juegos-slider">
+    <div class="scroll-content">
+      <img src="img/game.pragmaticPlayGatesOfOlympus.thumbnail.512x512_v4.png" alt="Slots">
+      <img src="img/game.pragmaticPlayGoldParty.thumbnail.512x512_v3.png" alt="Ruleta">
+      <img src="img/game.pragmaticPlayJokersJewels.thumbnail.512x512_v3.png" alt="Cartas">
+      <img src="img/game.pragmaticPlaySweetBonanza.thumbnail.512x512_v4.png" alt="Deportes">
+      <img src="img/game.pragmaticPlayCongoCash.thumbnail.512x512_v3.png" alt="Jackpot">
+      <img src="img/game.mg9MasksOfFire.thumbnail.512x512_v3.png" alt="Slots">
+      <img src="img/game.pragmaticPlayGatesOfOlympus.thumbnail.512x512_v4.png" alt="Ruleta">
+      <img src="img/game.pragmaticPlayJokersJewels.thumbnail.512x512_v3.png" alt="Cartas">
+      <img src="img/game.pragmaticPlaySweetBonanza.thumbnail.512x512_v4.png" alt="Deportes">
+      <img src="img/game.pragmaticPlayCongoCash.thumbnail.512x512_v3.png" alt="Jackpot">
+    </div>
+  </div>
+  
+  <div class="info-externa">
+    <p>JUGA CON CONFIANZA Y RETIRA 1.500.000 DIARIOS</p>
+    <p>RULETA EN VIVO - SLOTS - APUESTAS</p>
+  </div>
+
+  <div class="metodos-pago">
+    <h2 class="titulo-pago">MÉTODOS DE PAGO</h2>
+    <div class="iconos-pago">
+      <img src="img/8043680.png" alt="Mastercard">
+      <img src="img/Mercado Pago.png" alt="MercadoPago">
+      <img src="img/logo-large.png" alt="Rapipago">
+      <img src="img/logo-cuenta-dni.png" alt="Pago Fácil">
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("whatsappButton").addEventListener("click", function () {
+      const nombre = document.getElementById("nombreUsuario").value.trim();
+      const mensaje = nombre
+        ? `Buenas! Me gustaría crear un usuario. Mi nombre es ${nombre}.`
+        : "Buenas! Me gustaría crear un usuario.";
+      const telefono = "5493586541581";
+      window.open(`https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`, "_blank");
+      // ✅ Enviar evento solo cuando el usuario hace clic
+  if (typeof fbq === "function") {
+    fbq('track', 'Subscribe');
+  }
+    });
+  </script>
+</body>
+</html>
