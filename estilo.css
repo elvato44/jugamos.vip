@@ -170,15 +170,15 @@ body {
 }
 
 .dorado-neon {
- color: #13f02e;
+ color: #f01313;
   font-size: 42px;
-  text-shadow: 0 0 15px #13f02e, 0 0 30px #01ac14;
+  text-shadow: 0 0 15px #f01313, 0 0 30px #f01313;
   animation: glow-verde 2s infinite ease-in-out;
 }
 
 @keyframes glow-verde {
-  0%, 100% { text-shadow: 0 0 6px #13f02e; }
-  50% { text-shadow: 0 0 20px #01ac14; }
+  0%, 100% { text-shadow: 0 0 6px #f01313; }
+  50% { text-shadow: 0 0 20px #f01313; }
 }
 
 .info-externa {
