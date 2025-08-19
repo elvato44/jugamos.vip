@@ -24,8 +24,8 @@ body {
 
 .logo-wrapper {
   text-align: center;
-  margin-top: -5px;   /* Más espacio arriba */
-  margin-bottom: 5px; /* Más espacio abajo */
+  margin-top: 8px;   /* Más espacio arriba */
+  margin-bottom: 15px; /* Más espacio abajo */
 }
 
 .logo {
